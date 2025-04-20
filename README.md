@@ -25,7 +25,11 @@ git add .
 git commit -m "打上commit備註"
 ```
 6. 如果要刪除文件，要在 add 那個檔案，然後再 commit，status就會乾淨
-7. 在 GitHub建立 Repository，回到vscode在終端機輸入GitHub上的指令就完成了
+7. 在 GitHub建立 Repository，回到vscode在終端機輸入GitHub上的指令
+8. 之後如果有更動檔案，除了要 add 和 commit 之外，還要再輸入下面才會傳到github上
+```sh
+git push
+```
 
 
 <br>
