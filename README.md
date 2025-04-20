@@ -9,21 +9,36 @@ YA -20250420
 git config --global user.name "cy"
 git config --global user.email "alisawang09@gmail.com"
 ```
+
+<br>
+
 2. 開始git
 ```sh
 git init
 ```
+
+<br>
+
 3. 建立 .gitignore檔案，寫入想避免上傳的檔案
     - 例如：*.png，代表上傳會忽略所有 png
     - 一行個資料，也可以寫整個資料夾：folder/
+
+<br>
+
 4. 將全部檔案上傳到暫存區
 ```sh
 git add .
 ```
+
+<br>
+
 5. Commit上傳
 ```sh
 git commit -m "打上commit備註"
 ```
+
+<br>
+
 6. 如果要刪除文件，要在 add 那個檔案，然後再 commit，status就會乾淨
     - 也可以用下面指令一次add, commit (但不適用新建的檔案)
     ```sh 
