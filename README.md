@@ -25,12 +25,33 @@ git add .
 git commit -m "打上commit備註"
 ```
 6. 如果要刪除文件，要在 add 那個檔案，然後再 commit，status就會乾淨
+    - 也可以用下面指令一次add, commit (但不適用新建的檔案)
+    ```sh 
+    git commit -am　"message"
+    ```
+
+<br>
+
 7. 在 GitHub建立 Repository，回到vscode在終端機輸入GitHub上的指令
+
+<br>
+
 8. 之後如果有更動檔案，除了要 add 和 commit 之外，還要再輸入下面才會傳到github上
 ```sh
 git push
 ```
+<br>
 
+# Collaboration
+1. 在github Setting加入協作者
+2. 協作者複製網址，到自己的vscode終端機輸入
+```sh
+git clone 網址
+```
+3. 之後要pull新的資料 (版本)，就輸入
+```sh
+git pull
+```
 
 <br>
 
@@ -56,4 +77,31 @@ git diff 版本號碼 -- 檔名
 git checkout 版本號碼 -- 檔名
 #回復到某檢查點，並刪除之後的紀錄 (不可逆)
 git reset --hard 版本號碼
+```
+
+<br>
+
+# Branch
+```sh
+#查看目前分支
+git branch -v
+
+#建立新分支
+git branch newbranch
+
+#切換與建立新的newbranch
+git checkout -b newbranch
+
+#切換到newbranch分支
+git checkout newbranch
+
+#刪除分支
+git branch -d newbranch
+
+#push分支的東西
+git push origin newbranch
+#會在github的pullrequest看到
+
+#合併newbranch到主分支
+git merge newbranch
 ```
